@@ -33,3 +33,4 @@ ans2=s[i]+ans2;
 ```
 Cách 2 là sử dụng hàm ```cpp reverse() ``` như trên. Tuy nhiên, thực tế, `reverse()` thường sẽ nhanh hơn vì nó sử dụng một số chức năng tối ưu của C++ để đảo ngược chuỗi. Trong khi đó, cách 1 tạo một chuỗi mới trong bộ nhớ và gán cho ans2, điều này sẽ tốn thời gian và bộ nhớ hơn.
 Sử dụng cách 1 sẽ dẫn đến TLE ở 5 test.
+ĐPT O(nlogn)
