@@ -26,6 +26,7 @@ if(count>1)cout<<"NO SOLUTION";
 	}
 ```
 Nếu count > 1 thì không thể tồn tại xâu đối xứng do đó in ra NO SOLUTION. Ngược lại thì in ra xâu ans1+mid+ans2 với ans2. ans2 phải là đảo ngược của ans1, có 2 cách:
+
 Cách 1:
 ```cpp
 ans2=s[i]+ans2;
