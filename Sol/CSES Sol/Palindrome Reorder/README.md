@@ -17,7 +17,7 @@ Xâu ans1 là nửa trước của xâu đối xứng nếu có, ans2 là nửa 
 		}
 	}
 ```
-xét từng cặp ký tự trong s, nếu nó bnagwf nhau thì thêm vào ans1 và ans2. Nếu gặp ký tự lẻ thì mid = s[i] và chỉ cộng lên 1 và tăng biến count lên 1.
+xét từng cặp ký tự trong s, nếu nó bằng nhau thì thêm vào ans1 và ans2. Nếu gặp ký tự lẻ thì mid = s[i] và chỉ cộng lên 1 và tăng biến count lên 1.
 ```cpp
 if(count>1)cout<<"NO SOLUTION";
 	else{
@@ -25,7 +25,7 @@ if(count>1)cout<<"NO SOLUTION";
 		cout<<ans1<<mid<<ans2;
 	}
 ```
-Nếu count > 1 thì không thể tồn tại xâu đối xứng do đó in ra NO SOLUTION. Ngược lại thì in ra xâu ans1+mid+ans2 với ans2. ans2 phải là đảo ngược của ans1, có 2 cách
+Nếu count > 1 thì không thể tồn tại xâu đối xứng do đó in ra NO SOLUTION. Ngược lại thì in ra xâu ans1+mid+ans2 với ans2. ans2 phải là đảo ngược của ans1, có 2 cách:
 Cách 1:
 ```cpp
 ans2=s[i]+ans2;
