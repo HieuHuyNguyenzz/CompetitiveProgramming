@@ -14,6 +14,17 @@ Một số đặc điểm của thuật toán:
 - Làm việc được với cấu trúc Linked List
 
 Cài đặt: khá đơn giản, chỉ cần 1 vòng for:
-'''cpp
+
+"""cpp
+// giả sử a là mảng các số nguyên int
+int LinearSearch(int x, int a[]){
+  for(int i = 0; i < a.size(); i++){
+    if(a[i] == x){
+      return i;
+    }
+  }
+  return -1;
+}
+'''
 
 ## 2. Tìm kiếm nhị phân (Binary Search)
