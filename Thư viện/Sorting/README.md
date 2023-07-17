@@ -89,3 +89,22 @@ Tất cả các thuật toán sắp xếp được đề cập ở trên đều 
 
 Trong C++ cung cấp hàm ```sort()``` trong thư viện Algorithm với độ phức tạp ổn định hơn so với các thuật toán kia và nhanh hơn. Hàm ```sort()``` được viết kết hợp giữa 3 thuật toán sắp xếp là  Quicksort, Heapsort và Insertion Sort còn được gọi là 
 Intro Sort. 
+
+Cú pháp:
+```cpp
+Sort(a.begin(), a.end());
+```
+### Cách viết hàm sắp xếp custom:
+Hàm ```sort()``` mặc định sẽ sắp xếp các phần tử từ bé đến lớn với mảng số và theo thứ tư từ điên đối với mảng xâu. TUy nhiên nếu muốn thay đổi cách sắp xếp theo một quy luật khác
+hoặc sắp xếp với cấu trúc dữ liệu sử dụng struct. Ta cần phải viết hàm so sánh như sau:
+```cpp
+bool cmp(object A, objeect B){
+    //Viết điều kiện để so sánh
+    return A.x<B.x;
+}
+```
+và sắp xếp như sau:
+```cpp
+sort(a.begin(), a.end(), cmp);
+```
+Đối với một sô điều kiện đơn giản hơn như sắp xếp từ nhỏ đến lớn có thể dùng greater<int> có sẵn thay vì viết cmp
