@@ -1,6 +1,6 @@
 # Chia để trị (Divide and Conquer)
 
-_Khái niệm_:Giống Tham lam, Chia để trị không chỉ là một thuật toán mà là một chuỗi các thuật toán có cùng tư tưởng với nhau. Chia để trị dựa trên việc chia nhỏ vấn đề (Divide) thành các vấn đề con tương tự với nó và thực hiện giải quyết các bài toán con (Conquer) để sử dụng kết quả các bài toán con giải bài toán lớn hơn. Lặp lại việc chia này cho đến khi không thể chia được nữa.
+_Khái niệm_: Giống Tham lam, Chia để trị không chỉ là một thuật toán mà là một chuỗi các thuật toán có cùng tư tưởng với nhau. Chia để trị dựa trên việc chia nhỏ vấn đề (Divide) thành các vấn đề con tương tự với nó và thực hiện giải quyết các bài toán con (Conquer) để sử dụng kết quả các bài toán con giải bài toán lớn hơn. Lặp lại việc chia này cho đến khi không thể chia được nữa.
 
 Các bài toán sử dụng tư tưởng chia để trị có độ phức tạp tính bằng hàm log, thường là log{n} và tệ nhất là O(n), do đó nó sẽ nhanh hơn so với các giải thuật tuyến tính O(n) và chậm hơn các giải thuật tức thời O(1).
 
