@@ -12,7 +12,7 @@ Quy hoạch động được sử dụng khi ta tìm được công thức liên
 ## Trạng thái của bài toán
 Khi giải một vấn đề sử dụng quy hoạch động, cần quan tâm đến một vấn đề, đó là <strong>trạng thái</strong> của bài toán.
 
-Trạng thái là một trường hợp, một bài toán con của bài toán lớn. Để giải bài toán quy hoạch động, điều quan trọng nhất là tìm ra mối liên hệ giữa một trạng thái và các trạng thái có tham số nhỏ hơn.
+Trạng thái là một trường hợp, một bài toán con của bài toán lớn. Để giải bài toán quy hoạch động, điều quan trọng nhất là tìm ra mối liên hệ giữa một trạng thái và các trạng thái có tham số nhỏ hơn (gọi là công thức truy hồi)
 
 ## Các dạng bài quy hoạch động
 - Đếm (Counting)
@@ -20,3 +20,16 @@ Trạng thái là một trường hợp, một bài toán con của bài toán l
 - Tree
 - Digit
 - Bitmasking
+
+# Tổng kết
+Trích "Phân tích về QHĐ - Thầy Lê Minh Hoàng"
+
+Nguồn: https://vnoi.info/wiki/algo/dp/thac-mac-ve-qhd.md
+
+Bạn cứ hiểu quy hoạch động là quy hoạch động. Đừng quan tâm đến cách thức lưu trữ (một chiều, hai chiều, rời rạc…), cũng đừng quan tâm tới thứ tự tính toán (quét ngang, băm chéo, trên cây, trên DAG, trên đường, dưới ao…) thì sẽ thấy vấn đề là do dân competitive programmers tự thêm thuật ngữ mới vào, chứ bản chất rất đơn giản:
+
+Dynamic Programming = Solving Recurrence + Memoization
+
+Nói như vậy mọi bài QHĐ đều phải tìm cách xác định bài toán, tức là không gian các x = các trạng thái của nó.
+
+Những chuyện xử lý bit, nén, … là encoding, nó là kỹ thuật cơ bản không liên quan gì tới QHĐ hết mà chỉ dùng để mã hóa bài toán. Những chuyện DFS, Topological Sorting cũng là để xác định thứ tự tính, chứ không phải đặc trưng của QHĐ. Bạn nên coi các cái này là kỹ thuật bổ trợ nhằm tăng tính hiệu quả của phép cài đặt mà thôi. 
