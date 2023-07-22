@@ -22,7 +22,7 @@ Trạng thái là một trường hợp, một bài toán con của bài toán l
 - Digit
 - Bitmasking
 
-# Tổng kết
+## Tổng kết
 Trích "Phân tích về QHĐ - Thầy Lê Minh Hoàng"
 
 Nguồn: https://vnoi.info/wiki/algo/dp/thac-mac-ve-qhd.md
