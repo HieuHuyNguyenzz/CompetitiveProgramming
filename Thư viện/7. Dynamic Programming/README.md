@@ -16,6 +16,7 @@ Trạng thái là một trường hợp, một bài toán con của bài toán l
 
 ## Các dạng bài quy hoạch động
 - Đếm (Counting)
+- Path of grid
 - KnapSack
 - Tree
 - Digit
