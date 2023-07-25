@@ -1,24 +1,46 @@
-# Lý thuyết đồ thị
+# BFS và DFS
+## 1. BFS
+BFS - Breadth-first search, thuật toán duyệt theo chiều rộng, là một trong những thuật toán tìm kiếm cơ bản và thiết yếu trên đồ thị. Mà trong đó, những đỉnh nào gần đỉnh xuất phát hơn sẽ được duyệt trước.
 
-## Khái niệm về đồ thị
-Một đồ thị, kí hiệu là G(V, E), gồm hai thành phần:
+![Alt Text](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breadth-First-Search-Algorithm.gif?20100504223639)
 
-- Tập hợp V, bao gồm các đối tượng, được gọi là tập hợp các đỉnh (vertex) của đồ thị
-- Tập hợp E, bao gồm một cặp các đỉnh, được gọi là tập hợp các cạnh (vertex) của đồ thị
+Mã giả thuật toán:
+```
+BFS (G, s)                   //G là đồ thị và s là nút xuất phát
+      Khởi tạo hàng đợi Q.
+      Q.enqueue( s ) //insert s vào hàng đợi
 
-Ta sẽ kí hiệu m, n lần lượt là số đỉnh và số cạnh của đồ thị, |V| = n, |E| = m . Số đỉnh của đồ thị đôi khi ta cũng gọi là bậc của đồ thị (order of the graph).
+      đánh dấu s là đã đến thăm.
+      while ( Q không rỗng)
+           //
+           v  =  Q.dequeue( )
 
-Đồ thị được phân loại như sau:
-![image](https://github.com/HieuHuyNguyenzz/CompetitiveProgramming/assets/135397654/fc1de7ad-fc67-448d-a784-6feb0b72425b)
+          //duyệt qua các đỉnh kề của Q  
+          for all neighbours w of v in Graph G
+               if w chưa được đến thăm
+                        Q.enqueue( w )             //
+                        đánh dấu w là đã đến thăm.
+```
+BFS có độ phức tạp là O(V + E) khi cài đặt đồ thị đồ thị theo danh sách kề.
 
-## Một số khái niệm trên đồ thị
-### 1. Cạnh
-Trong một đồ thị, ta nói hai đỉnh trên đồ thị được nối với nhau thông qua một cạnh nếu giữa tồn tại một đường nối trực tiếp từ đỉnh này đến đỉnh kia
+## 2. DFS
+DFS - Depth First Traversal, thuật toán duyệt theo chiều sâu, là một thuật toán duyệt trên đồ thị giống BFS. Tuy nhiên khác với BFS, trong thuật toán DFS các đỉnh sẽ được duyệt theo chiều sâu của đồ thị, khi không duyệt sâu tiếp được sẽ backtrack lại để duyệt các đỉnh khác.
 
-### 2. Bậc
-Trong một đồ thị, bậc (degree) của đỉnh v trong đồ thị, ký hiệu deg(v), cạnh nối với đỉnh v.
+![Alt Text](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif)
 
-Ta có các tính chất sau:
-1. Tổng bậc của các đỉnh trong một đồ thị luôn luôn chi hết cho 2, hay:
-           $\sum_{v} deg(v) = 2 \times m$
-2. 
+Mã giả thuật toán:
+```
+DFS(G, u)
+    u.visited = true
+    for each v ∈ G.Adj[u]
+        if v.visited == false
+            DFS(G,v)
+     
+main() {
+    For each u ∈ G
+        u.visited = false
+     For each u ∈ G
+       DFS(G, u)
+}
+```
+DFS có độ phức tạp O(V + E) tuy nhiên tốc độ sẽ có phần chậm hơn so với BFS do nó sử dụng đệ quy.
