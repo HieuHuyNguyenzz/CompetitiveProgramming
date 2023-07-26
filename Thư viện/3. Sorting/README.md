@@ -14,6 +14,9 @@ Bài toán sắp xếp dạng tổng quát nhất là sắp xếp (Sorting) mộ
 
 Độ phức tạp: O($n^2$)
 
+Cài đặt: [BubbleSort.cpp](src/BubbleSort.cpp)
+
+
 ## 2. Sắp xếp chèn (Insertion Sort)
 ![Alt Text](https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif)
 
@@ -22,6 +25,8 @@ Bài toán sắp xếp dạng tổng quát nhất là sắp xếp (Sorting) mộ
 - Giả sử ta đã sắp xếp xong i phần tử của mảng. Để sắp xếp i+1 phần tử đầu tiên, ta tìm vị trí phù hợp của phần tử thứ i+1 và "chèn" nó vào đó.
 
 Độ phức tạp: O($n^2$)
+
+Cài đặt: [InsertionSort.cpp](src/InsertionSort.cpp)
 
 ## 3. Sắp xếp chọn (Selection Sort)
 ![Alt Text](https://thumbs.gfycat.com/SnappyMasculineAmericancicada-size_restricted.gif)
@@ -32,6 +37,8 @@ Bài toán sắp xếp dạng tổng quát nhất là sắp xếp (Sorting) mộ
 - Bước i tìm phần tử nhỏ thứ i của dãy và đưa lên vị trí thứ n, cho đến khi được dãy gồm n phần tử từ nhỏ đến lớn.
 
 Độ phức tạp: O($n^2$)
+
+Cài đặt: [SelectionSort.cpp](src/SelectionSort.cpp)
 
 ## 4. Sắp xếp trộn (Merge Sort)
 ![Alt Text](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif?20151222172210)
@@ -48,6 +55,8 @@ Sau đó gộp 2 phần lại với nhau. Để gộp 2 phần, ta làm như sau
 
 Độ phức tạp O($nlogn$)
 
+Cài đặt: [MergeSort.cpp](src/MergeSort.cpp)
+
 ## 5. Sắp xếp vun đống (Heap Sort)
 ![Alt Text](https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif?20110419031008)
 
@@ -58,6 +67,8 @@ Ta lưu mảng vào CTDL Heap.
 Ở mỗi bước, ta lấy ra phần tử nhỏ nhất trong heap, cho vào mảng đã sắp xếp.
 
 Độ phức tạp O($nlogn$)
+
+Cài đặt: [HeapSort.cpp](src/HeapSort.cpp)
 
 ## 6. Sắp xếp nhanh (Quick Sort)
 ![Alt Text](https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif)
@@ -71,6 +82,8 @@ Bước 1:Chia dãy thành 2 phần, một phần "lớn" và một phần "nh�
 Bước 2: Gọi đệ quy để sắp xếp 2 phần.
 
 Độ phức tạp O($nlogn$), xáu nhất là O($n^2$) nhưng trường hợp này như không thể xảy ra.
+
+Cài đặt: [QuickSort.cpp](src/QuickSort.cpp)
 
 ## 7. Một só thuật toán sắp xếp khác
 Ngoài các thuật toán kể trên, còn rất nhiều thuật toán sắp xếp khác:
