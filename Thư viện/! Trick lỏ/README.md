@@ -22,4 +22,11 @@ cout<<endl;
 ## 4. Nên sử dụng array nếu có thể
 Thay vì dùng vector thì nên sử dụng mảng thường để tránh tốn bộ nhớ
 
-## 5....
+## 5 Tăng tốc độ nhập xuất
+Trong C++, sử dụng nhập xuất ```cin / cout``` có tốc độ không nhanh so với sử dụng nhập xuất trong C.
+Sử dụng hai dòng lệnh sau sẽ giúp tăng tốc độ nhập xuất
+```cpp
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+```
+```ios_base::sync_with_stdio(false)``` đặt trạng thái đồng bộ hóa của các luồng nhập/xuất chuẩn trong C++ thành không đồng bộ với các hoạt động nhập/xuất C của C. Điều này có thể cải thiện hiệu suất của các hoạt động nhập/xuất trong C++. ```cin.tie(NULL)``` hủy liên kết giữa cin và cout. Điều này có nghĩa là sau khi bạn nhập từ cin, nó sẽ không tự động xóa bộ đệm đầu ra của cout, điều này có thể giúp cải thiện hiệu suất.
