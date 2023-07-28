@@ -11,4 +11,6 @@ So với các thuật toán khác, có thể thấy rằng thuật toán tham la
 - Khó chứng minh tính đúng đắn của thuật toán
 
 Có thể thấy rất khó để có thể chứng minh tính đúng đắn của một thuật toán tham lam do việc tối ưu cục bộ thường không đồng nghĩa với tối ưu toàn cục. Một thuật toán tham lam đúng phải đảm bảo được 2 yếu tố sau:
-- Nó có cấu trúc tối ưu, và cấu trúc tối 
+- Nó có cấu trúc tối ưu, và cấu trúc tối ưu này bao gồm tối ưu của bài toán con
+- Luôn có một lựa chọn tối ưu ở mỗi bước
+  
