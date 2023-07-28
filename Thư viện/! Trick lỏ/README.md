@@ -30,3 +30,27 @@ ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 ```
 ```ios_base::sync_with_stdio(false)``` đặt trạng thái đồng bộ hóa của các luồng nhập/xuất chuẩn trong C++ thành không đồng bộ với các hoạt động nhập/xuất C của C. Điều này có thể cải thiện hiệu suất của các hoạt động nhập/xuất trong C++. ```cin.tie(NULL)``` hủy liên kết giữa cin và cout. Điều này có nghĩa là sau khi bạn nhập từ cin, nó sẽ không tự động xóa bộ đệm đầu ra của cout, điều này có thể giúp cải thiện hiệu suất.
+
+## 6. Sử dụng typecasting
+Ví dụ như sau:
+```cpp
+#define sz(x) (int)x.size()
+```
+Việc sử dụng các typecasting này giúp việc code trở nên thuẩn tiện hơn hmmm.
+
+## 7. Làm quen với việc sử dụng các toán tử bit
+Các toán tử bit thường chạy nhanh hơn so với sử dụng các hàm bình thường. Ví dụ khi cần chia một số cho 2 hoặc nhân với 2, việc sử dụng toán tử ```<<``` hay ```>>``` sẽ nhanh hơn so với ```x*=2``` hay ```x/=2```.
+Ta có:
+- Toán tử ```&```: sử dụng để kiểm tra dư khi chia cho 2.
+
+## 8. Sử dụng range based thay cho vòng lặp thông thường
+Ví du:
+```cpp
+for(int i:a)
+  // bla bla
+```
+thay vì
+```cpp
+for(int i=0;i<a.size();i++)
+  // bla bla
+```
