@@ -1,8 +1,4 @@
-#include <iostream>
-#include <string>
-#include <algorithm>
-#include <vector>
-#include <set>
+#include <bits\stdc++.h>
 const int inf = 100005; 
 std::string pattern;
 std::string rev_pattern;

@@ -14,6 +14,12 @@ Khi giải một vấn đề sử dụng quy hoạch động, cần quan tâm đ
 
 Trạng thái là một trường hợp, một bài toán con của bài toán lớn. Để giải bài toán quy hoạch động, điều quan trọng nhất là tìm ra mối liên hệ giữa một trạng thái và các trạng thái có tham số nhỏ hơn (gọi là công thức truy hồi)
 
+## DP Bottom-Up và DP Top-down
+Có hai hướng tiếp cận để lập trình một vấn đề DP: Bottom-up và Top-down. Hướng Top-down thiên về việc chỉ cần tính những subproblems cần thiết để giải quyết bài toán lớn. Còn Bottom-Up được coi là căn bản của bài toán, khi đó các subproblems sẽ được tính một cách tuần tự từ nhỏ đến lớn. Cả hai cách đều có điểm chung là nó sẽ lưu các kết quả được tính vào một bảng. Mỗi phương pháp có các ưu/nhược điểm khác nhau như sau:
+
+|   |   Bottom-Up   |   Top-Down    |
+-------------------------------------
+|Ưu điểm| - Nó là một phương pháp cải tiến so với việc tìm kiếm đệ quy toàn bộ. - Chỉ tính và lưu kết quả của một bài toán con nếu cần thiết| - Có thể nhanh hơn do sử dụng việc gọi vòng lặp thay vì gọi đệ quy - Có thể tiết kiệm không gian bộ nhớ |
 ## Các dạng bài quy hoạch động
 - Đếm (Counting)
 - Path of grid
