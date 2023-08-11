@@ -16,8 +16,7 @@ Cây phân đoạn (Segment tree) là một cấu trúc dữ liệu được xâ
 - Nếu một nút chỉ quản lý một đối tượng thì nó sẽ là nút lá và không có nút con. Chiều cao của cây phân đoạn là O(logN), bởi vì khi đi xuống từ gốc đến lá, kích thước của mỗi đoạn giảm đi một nửa. Tại mỗi độ sâu của cây, không có phần tử nào được quản lý bởi 2 nút khác nhau của cây.
 
 Ví dụ với một cây phân đoạn dùng để tính tổng đoạn con:
-https://vnoi.info/wiki/uploads/segment-tree-basic_img3.png
-
+![image](https://github.com/HieuHuyNguyenzz/CompetitiveProgramming/assets/135397654/fb2c08b5-be34-499c-8e83-173c66c586f2)
 Khi đó, có 3 thao tác có thể thực hiện trên cây đó là:
 - Thêm phần tử O(1)
 - Cập nhật phần tử O($log{n}$) 
