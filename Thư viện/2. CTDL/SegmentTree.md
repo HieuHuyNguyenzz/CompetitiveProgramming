@@ -25,7 +25,7 @@ Khi đó, có 3 thao tác có thể thực hiện trên cây đó là:
 
 ## Cài đặt
 ```cpp
-template<class T> struct Seg { 
+template<class T> struct Segment { 
 	const T ID = 1e18;
 	int n; 
 	vector<T> seg;
