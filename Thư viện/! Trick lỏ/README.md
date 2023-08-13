@@ -39,10 +39,12 @@ Ví dụ như sau:
 Việc sử dụng các typecasting này giúp việc code trở nên thuẩn tiện hơn hmmm.
 
 ## 7. Làm quen với việc sử dụng các toán tử bit
-Các toán tử bit thường chạy nhanh hơn so với sử dụng các hàm bình thường. Ví dụ khi cần chia một số cho 2 hoặc nhân với 2, việc sử dụng toán tử ```<<``` hay ```>>``` sẽ nhanh hơn so với ```x*=2``` hay ```x/=2```.
 Ta có:
-- Toán tử ```&```: sử dụng để kiểm tra dư khi chia cho 2.
-
+- Toán tử ```&```: kiểm tra tính chắn lẻ của một số do x & 1 = 1 nếu x lẻ và = 0 nếu x chẵn. Ngoài ra x & $(2^k −1)$ = 0 nếu x chia hết cho $2^k$.
+- Toán tử ```|```: trả về số có vị trí bit thứ k = 1 nếu vị trí này có ít nhất một trong 2 số là bit 1.
+- Toán tử ```^```: trả về số có vị trí bit thứ k = 1 nếu vị trí này chỉ có một trong 2 số là bit 1.
+- Toán tử ```~```: đảo ngược bit của 1 số
+- Toán tử ```>>``` và ```<<```: x << k tức là nhân x với $2^k$, ngược lại x >> k là chia x với $2^k$.
 ## 8. Sử dụng range based thay cho vòng lặp thông thường
 Ví du:
 ```cpp
