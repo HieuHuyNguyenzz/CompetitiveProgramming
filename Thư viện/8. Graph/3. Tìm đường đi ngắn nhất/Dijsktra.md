@@ -1,5 +1,5 @@
 # Dijsktra
-Thuật toán Dijkstra được dùng để giải quyết bài toán đường đi ngắn nhất của một cặp đỉnh trên đồ thị, tuy nhiên thuật toán chỉ hoạt động trên đồ thị có trọng số không âm.
+Thuật toán Dijkstra được dùng để giải quyết bài toán đường đi ngắn nhất từ một đỉnh đến các đỉnh khác trên đồ thị, tuy nhiên thuật toán chỉ hoạt động trên đồ thị có trọng số không âm.
 
 ## Bài toán 
 Cho một đồ thị có hướng với N đỉnh (được đánh số từ 0 đến N−1), M cạnh có hướng, có trọng số không âm, và một đỉnh nguồn S. Trọng số của tất cả các cạnh đều không âm. 
