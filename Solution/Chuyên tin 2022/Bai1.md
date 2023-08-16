@@ -20,15 +20,8 @@ Dữ liệu: Vào từ thiết bị vào chuẩn có khuôn dạng:
 Kết quả: Ghi ra thiết bị ra chuẩn 𝑇 dòng, mỗi dòng tương ứng với một trường hợp thử
 nghiệm, ghi “YES” nếu tồn tại cách cắt thỏa mãn hoặc “NO” trong trường hợp ngược lại.
 
-Ví dụ:
----------
-|Dữ liệu vào | Kết quả ra |
-----------
-|4 4 3      |              |
-|  1 2 6||
-| 2 4 10||
-|  1 3 16||
-|  3 4 4||
-|  3 14
-|  4 14
-|  4 11
+Giới hạn:
+
+- Subtask 1 (30% số điểm): 𝑛 ≤ 20; 𝑞 ≤ 200;
+- Subtask 2 (40% số điểm): 𝑛 ≤ 200; 𝑞 ≤ 2000;
+- Subtask 3 (30% số điểm): 𝑛 ≤ 2000; 𝑞 ≤ 2 × $10^6$
