@@ -5,9 +5,7 @@ Ngân có một chuỗi hạt được biểu diễn bằng một xâu 𝑆 có 
 kí tự đều là chữ cái la tinh thường. Ngân muốn cắt chuỗi hạt để nhận được 𝑘 chuỗi con, trong
 đó mỗi chuỗi con có độ dài định trước và là chuỗi đối xứng.
 Yêu cầu: Hãy giúp Ngân xác định xem có tồn tại cách cắt 𝑆 để nhận được 𝑘 xâu đối xứng có
-độ dài 𝑙1
-, 𝑙2
-, . . , 𝑙𝑘.
+độ dài 𝑙1, 𝑙2, . . , 𝑙𝑘.
 Ví dụ, có thể cắt xâu ‘asaaabbrcaacw’ để nhận được ba xâu đối xứng có độ dài 2, 3 và 4 là
 ‘bb’, ‘aaa’, ‘caac’.
 Dữ liệu: Vào từ thiết bị vào chuẩn có khuôn dạng:
@@ -25,3 +23,17 @@ Giới hạn:
 - Subtask 1 (30% số điểm): 𝑛 ≤ 20; 𝑞 ≤ 200;
 - Subtask 2 (40% số điểm): 𝑛 ≤ 200; 𝑞 ≤ 2000;
 - Subtask 3 (30% số điểm): 𝑛 ≤ 2000; 𝑞 ≤ 2 × $10^6$
+
+## Ý tưởng
+### 1. Ngây thơ
+
+### 2. Giải thuật đúng
+Có thể thấy đây là một bài truy vẫn trên xâu, do đó để trả lời các truy vấn + xâu đối xứng thì có thể áp dụng string hashing để tìm tất cả các xâu con đối xứng thuộc xâu lớn.
+
+Sau đó do mỗi truy vấn yêu trả lời xem xâu gốc có thể chia thành một tập các xâu đối xứng với độ dài cho trước hay không vậy từ các xâu đối xứng tìm được trước đó cần tìm kiếm một tổ hợp các xâu này thỏa mãn đề bài và vị trí các xâu con đối xứng không được đè lên nhau. Công việc này có thể được giải quyết sử dụng kỹ thuật dp bitmask
+
+Độ phức tạp: O()
+
+## Cài đặt
+[Chuỗi số](chuyentin1.cpp)
+
