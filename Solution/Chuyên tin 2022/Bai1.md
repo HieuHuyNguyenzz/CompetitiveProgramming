@@ -37,3 +37,50 @@ Sau đó do mỗi truy vấn yêu trả lời xem xâu gốc có thể chia thà
 ## Cài đặt
 [Chuỗi số](chuyentin1.cpp)
 
+1. Khởi tạo các biến
+``` cpp
+string pattern,rev_pattern;      // xâu s và xâu đảo ngược của nó
+vector <int> dp;                 // vector dùng cho quá trình quy hoạch động sau này
+vector <long long> hash, rev_hash, power27; // Các vector dùng cho quá trình hash xâu 
+int n, numQuery;         // n là độ dài xâu s và numQuery là số truy vấn
+struct element {        // cấu trúc đại diện cho
+	int numSegments; 
+	vector <int> listSegments; 
+};
+vector <element> listElement; 
+set <int> listLength;
+vector <int> listPosition[10005];  
+```
+2. Gán giá trị cho các biến và thực hiện hash xâu
+```cpp
+void init() {
+	hash.resize(n + 2, 0LL);
+	rev_hash.resize(n + 2, 0LL);
+	power27.resize(n + 2, 0LL);
+	power27[0] = 1LL; 
+	for (int i = 1; i <= n; i++) {
+    	power27[i] = power27[i - 1] * 27LL; 
+    	hash[i] = hash[i - 1] * 27LL + (pattern[i - 1] - 'a' + 1); 
+    	rev_hash[i] = rev_hash[i - 1] * 27LL + (rev_pattern[i - 1] - 'a' + 1); 
+  	}
+}
+```
+3. Khởi tạo các hàm
+
+Hàm lấy giá trị hash của một đoạn
+```cpp
+long long getHash(int l, int r, const std::vector <long long> &hash) {
+	int len = r - l + 1;
+	long long ret = hash[r];
+	ret -= (hash[l - 1] * power27[len]);
+	return ret;  
+}
+```
+Hàm kiểm tra đối xứng
+```cpp
+bool checkPalindrome(int l, int r) {
+	long long currentHash = getHash(l, r, hash); 
+	long long reverseHash = getHash(n - r + 1, n - l + 1, rev_hash); 
+	return (currentHash == reverseHash); 
+}
+```
