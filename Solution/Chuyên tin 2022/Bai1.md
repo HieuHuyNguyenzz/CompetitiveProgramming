@@ -35,7 +35,7 @@ Sau đó do mỗi truy vấn yêu trả lời xem xâu gốc có thể chia thà
 Độ phức tạp: O()
 
 ## Cài đặt
-[Chuỗi số](chuyentin1.cpp)
+[Chuyên tin 2022: Chuỗi số](chuyentin1.cpp)
 
 1. Khởi tạo các biến
 ``` cpp
@@ -84,3 +84,12 @@ bool checkPalindrome(int l, int r) {
 	return (currentHash == reverseHash); 
 }
 ```
+
+4. Xử lý xâu
+Sau khi đã thực hiện việc hash xâu đầu vào, chúng ta sẽ thực hiện bước kiểm tra tất cả các xâu con thuộc xâu gốc nhằm tìm ra các xâu con đối xứng và vị trí của chúng.
+
+
+5. DP bitmask
+Khi đã có vị trí, độ dài của tất cả các xâu con đối xứng trên xâu đầu vào, do đề bài yêu cầu tìm xem có thể chia xâu gốc thành các xâu con đối xứng với độ dài thỏa mãn nên chúng ta sẽ sử dụng dp bitmask để lưu các tổ hợp xâu con đối xứng có thể được tách ra từ xâu gốc.
+
+6. Trả lời truy vấn
