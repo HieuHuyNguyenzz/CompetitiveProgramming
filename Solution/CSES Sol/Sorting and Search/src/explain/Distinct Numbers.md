@@ -12,4 +12,5 @@ In một số nguyên: số lượng giá trị phân biệt.
 ## Solution:
 Sử dụng set thêm các phần tử đầu vào để đếm các phần tử phân biệt
 
-Tag: Set, STL
+## Tag: 
+Set, STL
