@@ -1,2 +1,2 @@
 # Các vấn đề Adhoc
-Vấn đề Adhoc là một vấn đề mà cách giải của nó không nằm trong các kỹ thuật hay phương pháp đã được nghiên cứu. Mỗi vấn đề Adhoc là riêng biệt, không có kỹ thuật hay giải thuật đặc biệt nào được sử dụng để giải nó.
+Vấn đề Adhoc là một vấn đề mà cách giải của nó sử dụng một số kỹ thuật chuyên biệt. Các kỹ thuật này không phải là các thuật toán hay phương pháp tổng quát để giải một bài toán mà nó thường được sử dụng để bổ trợ cho các giải thuật đó
