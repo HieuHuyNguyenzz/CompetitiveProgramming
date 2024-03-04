@@ -2,7 +2,7 @@
 
 # Introduction
 
-[Weird Algorithm](https://www.notion.so/Weird-Algorithm-20027dbc5fa546b6bbd3110a2df8ca6f?pvs=21)
+[Weird Algorithm](https://github.com/HieuHuyNguyenzz/CompetitiveProgramming/blob/main/Solution/CSES/Solution/Weird%20Algorithm.md)
 
 [Missing Number](https://www.notion.so/Missing-Number-b556423296e742699286fbbb85e2d8ba?pvs=21)
 
