@@ -41,6 +41,7 @@ $$
 
 Hay dạng tổng quát như sau:
 
-![Untitled](Missing%20Number%20b556423296e742699286fbbb85e2d8ba/Untitled.png)
+![image](https://github.com/HieuHuyNguyenzz/CompetitiveProgramming/assets/135397654/dc6065cf-4e2e-4c24-a6b7-8c769138f6ba)
+
 
 - Khi đó chúng ta chỉ cần tính tổng từ 1 đến n và trừ đi các số nhận được sẽ được số bị thiếu
