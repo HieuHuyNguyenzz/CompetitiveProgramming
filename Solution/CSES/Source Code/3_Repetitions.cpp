@@ -2,6 +2,8 @@
  
 using namespace std;
  
+int N = 4e6;
+ 
 int main(){
     ios :: sync_with_stdio(false);
 	cin.tie(0); cout.tie(0);
